@@ -67,25 +67,21 @@ void AWWPlayerState::BeginPlay()
 
 void AWWPlayerState::ChangedPlayerCharacter(APlayerState* Player, APawn* NewPawn, APawn* OldPawn)
 {
-	// if (!IsValid(NewPawn) || !IsValid(OldPawn))
-	// {
-	// 	Debug::Print(TEXT("WWPlayerState : InValid NewPawn or OldPawn"));
-	// 	return;
-	// }
-
 	CancelAllPlayerActiveAbilities(WWAbilitySystemComponent);
 	
-	//Debug::Print(TEXT("AWWPlayerState::ChangedPlayerCharacter"));
 	if (APlayerCharacter* OldPlayerCharacter = Cast<APlayerCharacter>(OldPawn))
 	{
-		WWAbilitySystemComponent->RemoveSpawnedAttribute(OldPlayerCharacter->GetPlayerCharacterAttributeSet());
+		WWAbilitySystemComponent->RemoveSpawnedAttribute
+		(OldPlayerCharacter->GetPlayerCharacterAttributeSet());
 	}
-	//WWAbilitySystemComponent->SetAvatarActor(NewPawn);
 
 	if (APlayerCharacter* PlayerCharacter = Cast<APlayerCharacter>(NewPawn))
 	{
-		WWAbilitySystemComponent->AddSpawnedAttribute(PlayerCharacter->GetPlayerCharacterAttributeSet());
-		WWAbilitySystemComponent->InitAbilityActorInfo(this, PlayerCharacter);
+		WWAbilitySystemComponent->AddSpawnedAttribute
+		(PlayerCharacter->GetPlayerCharacterAttributeSet());
+		
+		WWAbilitySystemComponent->InitAbilityActorInfo
+		(this, PlayerCharacter);
 	}
 }
 
@@ -125,7 +121,6 @@ void AWWPlayerState::CancelAllPlayerActiveAbilities(UAbilitySystemComponent* ASC
 	FScopedAbilityListLock ActiveScopeLock(*GetAbilitySystemComponent());
 	if (!ASC)
 	{
-		//Debug::Print(TEXT("WWPlayerState : CancelAllActiveAbilities, Can't find ASC"));
 		return;
 	}
 
