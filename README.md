@@ -1,5 +1,5 @@
 # WutheringWaves_ProjectFiles
-[![Video_Image](https://www.youtube.com/watch?v=-TJyNcVCfHY/0.jpg)](https://www.youtube.com/watch?v=-TJyNcVCfHY)
+[![IMAGE ALT TEXT](https://img.youtube.com/watch?v=-TJyNcVCfHY/0.jpg)](https://www.youtube.com/watch?v=-TJyNcVCfHY)
 * 명조: 워더링 웨이브 게임 모작 프로젝트입니다.
 
 ## 개요
