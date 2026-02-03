@@ -20,8 +20,8 @@
 * 관리
 <br />![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
-## 자료
-* [PDF 자료](https://drive.google.com/file/d/1h8Hx5mR7-9_z3KuZal0OurJLFKapWh9E/view?usp=sharing, "구현 내용의 문서화 파일입니다.")
+## 기술문서
+* [명조 모작 캐릭터 기술문서](https://drive.google.com/file/d/1h8Hx5mR7-9_z3KuZal0OurJLFKapWh9E/view?usp=sharing, "구현 내용의 문서화 파일입니다.")
 
 ## 핵심 구현
 ### 1. 대시, 점프
